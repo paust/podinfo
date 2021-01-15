@@ -4,5 +4,12 @@ resources:
   - ../../app/deployment.yaml
   - ../../app/hpa.yaml
   - ../../app/service.yaml
-patches:
-  - ./replica_count.yaml
+patchesStrategicMerge:
+- |
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: podinfo
+  replicas:
+  - count: 1
+  
