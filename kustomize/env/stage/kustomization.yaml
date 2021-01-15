@@ -5,10 +5,5 @@ resources:
   - ../../app/hpa.yaml
   - ../../app/service.yaml
 patchesStrategicMerge:
-- apiVersion: apps/v1
-  kind: Deployment
-  metadata:
-    name: podinfo
-  spec: 
-    replicas: 1
+-  ./replica_count.yaml
   
