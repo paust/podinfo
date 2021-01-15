@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: deployment
+metadata:
+  name: podinfo
+spec:
+  replicas: 4
