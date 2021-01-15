@@ -9,6 +9,6 @@ patchesStrategicMerge:
   kind: Deployment
   metadata:
     name: podinfo
-  replicas:
-    count: 1
+  spec: 
+    replicas: 1
   
