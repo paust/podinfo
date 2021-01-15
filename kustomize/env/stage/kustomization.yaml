@@ -5,4 +5,4 @@ resources:
   - ../../app/hpa.yaml
   - ../../app/service.yaml
 patches:
-  - replica_count.yaml
+  - ./replica_count.yaml
