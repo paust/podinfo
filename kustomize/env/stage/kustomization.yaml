@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - ../../app/deployment.yaml
   - ../../app/service.yaml
-  - ./service-extern.yaml
+  - ./service_extern.yaml
 patchesStrategicMerge:
 -  ./replica_count.yaml
   
